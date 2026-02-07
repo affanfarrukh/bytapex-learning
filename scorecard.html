@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Readiness Scorecard | Bytapex</title>
+    <meta name="description"
+        content="Find out in 5 minutes why you’re not getting hired. Take the Salesforce Interview Readiness assessment.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">bytapex</a>
+    </nav>
+
+    <main class="scorecard-main">
+
+        <!-- 0. INTRO SCREEN -->
+        <section id="quiz-hero" class="quiz-hero">
+            <div class="hero-bg-particles" id="particles-js"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">Salesforce Interview</span><br>
+                    <span class="reveal-text text-gradient">Readiness Scorecard</span>
+                </h1>
+                <p class="hero-subtext reveal-text delay-1">Find out in 5 minutes why you’re not getting hired.</p>
+                <div class="reveal-text delay-2">
+                    <button id="start-btn" class="btn-primary magnetic large">Start Assessment</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ INTERFACE (Hidden Initially) -->
+        <section id="quiz-interface" class="quiz-interface hidden">
+
+            <div class="progress-container">
+                <div class="progress-bar-bg">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-text">Question <span id="q-current">1</span> of <span id="q-total">8</span></div>
+            </div>
+
+            <div class="container quiz-content">
+                <div id="question-card" class="glass-card question-card">
+                    <!-- Question injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULT SCREEN (Hidden Initially) -->
+        <section id="result-screen" class="result-screen hidden">
+            <div class="hero-bg-particles" id="result-particles"></div>
+            <div class="container">
+                <div class="glass-card result-card">
+                    <div class="score-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="circle-bg"></circle>
+                            <circle cx="50" cy="50" r="45" id="score-stroke" class="circle-stroke"></circle>
+                        </svg>
+                        <div class="score-number"><span id="final-score">0</span>%</div>
+                    </div>
+
+                    <h2 id="result-title" class="result-title">Calculating...</h2>
+                    <p id="result-message" class="result-message">Analyzing your interview patterns...</p>
+
+                    <div id="result-cta" class="result-actions">
+                        <!-- CTA injected by JS -->
+                    </div>
+                </div>
+
+                <!-- FINAL CTA BLOCK -->
+                <div class="final-cta-block">
+                    <h2>Stop Wasting Interviews.</h2>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn-primary magnetic large">Book Free Strategy Call</a>
+                        <a href="#" class="btn-secondary magnetic large">Talk to Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">bytapex</div>
+            <p class="footer-tagline">Where Salesforce Interviews Are Won</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="scorecard.js"></script>
+</body>
+
+</html>
