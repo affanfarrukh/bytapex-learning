@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Career News | bytapex</title>
+    <meta name="description"
+        content="Stay updated with the latest Salesforce news relevant to your career and interviews. Curated by bytapex.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">bytapex</a>
+        <div class="nav-links">
+            <a href="index.html#process">Process</a>
+            <a href="index.html#results">Results</a>
+            <a href="news.html">News</a>
+            <a href="vsl.html" class="btn-secondary">Root Cause Analysis</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- News Header -->
+        <section class="news-header-section">
+            <div class="container">
+                <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 20px;">
+                    Salesforce Career News <span class="text-gradient">— bytapex</span>
+                </h1>
+                <p class="hero-subtext" style="max-width: 800px; margin: 0 auto;">
+                    Only the updates that matter for your interviews.
+                </p>
+                <div class="last-updated" id="last-updated"
+                    style="margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem;">
+                    Auto-refreshing...
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-feed-section">
+            <div class="container">
+                <div id="news-grid" class="news-grid">
+                    <!-- News Cards will be injected here -->
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                        <p>Fetching latest updates...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">bytapex</div>
+            <p class="footer-tagline">Where Salesforce Interviews Are Won</p>
+            <div class="footer-copyright">
+                &copy; 2024 bytapex. All rights reserved.
+                <br><br>
+                <a href="privacy-policy.html"
+                    style="color: var(--text-secondary); text-decoration: none; margin-right: 20px;">Privacy Policy</a>
+                <a href="terms-conditions.html" style="color: var(--text-secondary); text-decoration: none;">Terms &
+                    Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="main.js"></script>
+    <script src="news.js"></script>
+</body>
+
+</html>
